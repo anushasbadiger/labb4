@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT fooddeliverywebsite (fooddeliverywebsite+)>
+<!ELEMENT fooddeliverywebsite (fooddeliverywebsite-id, fooddeliverywebsite-name, hours, menu, reviews)>
+<!ELEMENT fooddeliverywebsite-id (#PCDATA)>
+<!ELEMENT fooddeliverywebsite-name (#PCDATA)>
+<!ELEMENT hours (#PCDATA)>
+
+<!ELEMENT menu (dish+)>
+<!ELEMENT dish (dish-name, description, price)>
+<!ELEMENT dish-name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!ELEMENT reviews (#PCDATA)>
+
+<!ATTLIST fooddeliverywebsite id ID #REQUIRED>
+<!ATTLIST dish id ID #REQUIRED>
